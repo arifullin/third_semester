@@ -40,7 +40,7 @@ public class ServletForm extends HttpServlet{
                 }
             }
             try {
-                Repo.add(new User(req.getParameter("soap"),req.getParameter("password"),man,subscribe),"data");
+                Repo.add(new User(req.getParameter("soap"),req.getParameter("password"),man,subscribe));
             } catch (DataBaseEx dataBaseEx) {
                 req.setAttribute("message","data base ex");
                 getServletContext().getRequestDispatcher("/WEB-INF/views/reg.jsp").forward(req,resp);

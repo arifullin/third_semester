@@ -13,10 +13,10 @@
       <th>Subscribe</th>
     </tr>
     <tr>
-      <th><c:out value="${user.getSoap()}"/></th>
-      <th><c:out value="${user.getPassword()}"/></th>
-      <th><c:out value="${user.isMan()}"/></th>
-      <th><c:out value="${user.isSubscribe()}"/></th>
+      <th>${user.getSoap()}</th>
+      <th><${user.getPassword()}</th>
+      <th><${user.isMan()}</th>
+      <th><${user.isSubscribe()}</th>
     </tr>
   </table>
 </body>

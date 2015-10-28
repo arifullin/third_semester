@@ -50,6 +50,11 @@
   <dependencies>
     <!--servlet api dependency-->
     <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.36</version>
+    </dependency>
+    <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
       <version>${javax.servlet.api.version}</version>

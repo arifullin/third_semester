@@ -18,7 +18,7 @@ public class Authentication extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession ses = req.getSession();
         try {
-            User user = Repo.userAuthentication(req.getParameter("soap"),req.getParameter("password"),"data");
+            User user = Repo.userAuthentication(req.getParameter("soap"),req.getParameter("password"));
             ses.setAttribute("authentication",user);
             resp.sendRedirect("/profile");
         }catch (NoUserEx e){
